@@ -12,7 +12,8 @@
     "webpack-dev-server": "^3.7.2"
   },
   "scripts": {
-    "start": "webpack-dev-server --config ./webpack.config.js --mode development"
+    "start": "webpack-dev-server --config ./webpack.config.js --mode development",
+    "format": "prettier --write './src/**/*.{js,jsx,scss,json,md}'"
   },
   "devDependencies": {
     "@babel/core": "^7.4.5",
@@ -25,6 +26,7 @@
     "eslint-plugin-import": "^2.18.0",
     "eslint-plugin-jsx-a11y": "^6.2.3",
     "eslint-plugin-react": "^7.14.2",
+    "prettier": "^1.18.2",
     "style-loader": "^0.23.1"
   }
 }
