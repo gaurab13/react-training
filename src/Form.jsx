@@ -31,23 +31,23 @@ class Form extends React.Component {
     return (
       <div>
         <div className="task-box border border-dark w-50">
-          {
-            taskList.map((task, index) => {
-              const k = `task_${index}`;
-              return (
-                <div>
-                  <div className="card">
-                    <p className="card-text">{task}</p>
-                  </div>
+          {taskList.map((task, index) => {
+            const k = `task_${index}`;
+            return (
+              <div>
+                <div className="card">
+                  <p className="card-text">{task}</p>
                 </div>
-              );
-            })
-          }
+              </div>
+            );
+          })}
         </div>
         <br />
         <input type="text" value={formValue} onChange={this.handleChange} />
         <br />
-        <button type="submit" onClick={this.handleClick}>Submit</button>
+        <button type="submit" onClick={this.handleClick}>
+          Submit
+        </button>
       </div>
     );
   }
